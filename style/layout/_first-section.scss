@@ -1,0 +1,95 @@
+.first-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 870px) {
+        grid-template-columns: 1fr;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 140px;
+        @media screen and (max-width: 870px) {
+            text-align: center;
+            align-items: center;
+            margin: 120px 50px 50px 50px;
+            height: 300px;
+            h2 {
+                margin: -60px -10px 20px -10px;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+        p {
+            line-height: 27px;
+            font-size: 1.1rem;
+        }
+        button {
+            font-weight: 900;
+            border: none;
+            background: transparent;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 5px;
+                bottom: 0px;
+                left: 0;
+                border-radius: 5px;
+            }
+        }
+        .first-btn {
+            &::after {
+                background-color: #fad4007c;
+            }
+            &:hover::after {
+                background: #fad400;
+            }
+        }
+        .second-btn {
+            &::after {
+                background-color: #fe78667c;
+            }
+            &:hover::after {
+                background: #fe7766;
+            }
+        }
+    }
+    .image-one {
+        height: 600px;
+        background: url(../img/desktop/image-transform.jpg) center/cover;
+        @media screen and (max-width: 870px) {
+            height: 500px;
+        }
+        @media screen and (max-width: 600px) {
+            height: 400px;
+        }
+    }
+    .image-two {
+        height: 600px;
+        background: url(../img/desktop/image-stand-out.jpg) center/cover;
+        @media screen and (max-width: 870px) {
+            height: 500px;
+        }
+        @media screen and (max-width: 600px) {
+            height: 400px;
+        }
+    }
+}
+.reverse {
+    @media screen and (max-width: 870px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

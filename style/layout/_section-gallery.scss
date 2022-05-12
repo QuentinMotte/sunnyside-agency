@@ -1,0 +1,23 @@
+.gallery-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 450px;
+    @media screen and (max-width: 870px) {
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+    }
+    .first-img {
+        background: url(../img/desktop/image-gallery-milkbottles.jpg)
+            center/cover;
+    }
+    .second-img {
+        background: url(../img/desktop/image-gallery-orange.jpg) center/cover;
+    }
+    .third-img {
+        background: url(../img/desktop/image-gallery-cone.jpg) center/cover;
+    }
+    .four-img {
+        background: url(../img/desktop/image-gallery-sugarcubes.jpg)
+            center/cover;
+    }
+}

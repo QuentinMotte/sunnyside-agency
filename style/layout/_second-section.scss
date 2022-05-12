@@ -1,0 +1,45 @@
+.second-section {
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @media screen and (max-width: 870px) {
+        grid-template-columns: 1fr;
+    }
+    .block {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        h2 {
+            font-weight: 900;
+            font-size: 1.8rem;
+        }
+        p {
+            padding-top: 30px;
+            padding-bottom: 60px;
+            max-width: 350px;
+            line-height: 26px;
+        }
+    }
+    .first-block {
+        background: url(../img/desktop/image-graphic-design.jpg) center/cover;
+        h2 {
+            color: $color-green-h2;
+        }
+        p {
+            color: #3e7467;
+        }
+    }
+    .second-block {
+        background: url(../img/desktop/image-photography.jpg) center/cover;
+        h2 {
+            color: $color-blue-h2;
+        }
+        p {
+            color: $color-blue-p;
+        }
+    }
+}
