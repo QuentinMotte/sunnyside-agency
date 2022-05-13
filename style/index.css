@@ -275,25 +275,28 @@ header .title h1 {
   position: relative;
   cursor: pointer;
 }
-.first-section .block button::after {
+.first-section .block button span {
+  position: relative;
+}
+.first-section .block button::before {
   content: "";
   position: absolute;
   width: 130px;
   height: 5px;
-  bottom: 0px;
+  bottom: 2px;
   left: 0;
   border-radius: 5px;
 }
-.first-section .block .first-btn::after {
+.first-section .block .first-btn::before {
   background-color: rgba(250, 212, 0, 0.4862745098);
 }
-.first-section .block .first-btn:hover::after {
+.first-section .block .first-btn:hover::before {
   background: #fad400;
 }
-.first-section .block .second-btn::after {
+.first-section .block .second-btn::before {
   background-color: rgba(254, 120, 102, 0.4862745098);
 }
-.first-section .block .second-btn:hover::after {
+.first-section .block .second-btn:hover::before {
   background: #fe7766;
 }
 .first-section .image-one {

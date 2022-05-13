@@ -39,29 +39,32 @@
             text-transform: uppercase;
             position: relative;
             cursor: pointer;
-            &::after {
+            span {
+                position: relative;
+            }
+            &::before {
                 content: "";
                 position: absolute;
                 width: 130px;
                 height: 5px;
-                bottom: 0px;
+                bottom: 2px;
                 left: 0;
                 border-radius: 5px;
             }
         }
         .first-btn {
-            &::after {
+            &::before {
                 background-color: #fad4007c;
             }
-            &:hover::after {
+            &:hover::before {
                 background: #fad400;
             }
         }
         .second-btn {
-            &::after {
+            &::before {
                 background-color: #fe78667c;
             }
-            &:hover::after {
+            &:hover::before {
                 background: #fe7766;
             }
         }
